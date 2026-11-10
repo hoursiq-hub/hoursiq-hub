@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="500" viewBox="0 0 1600 500" role="img" aria-labelledby="title desc">
+  <title id="title">Cybersecurity and programming banner</title>
+  <desc id="desc">A dark navy technical banner with a neon cyan and green shield, circuit grid, terminal prompt, and code fragments.</desc>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#050B14"/>
+      <stop offset="55%" stop-color="#08182A"/>
+      <stop offset="100%" stop-color="#0D1726"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00D9FF" stop-opacity="0"/>
+      <stop offset="42%" stop-color="#00D9FF"/>
+      <stop offset="70%" stop-color="#7CFF6B"/>
+      <stop offset="100%" stop-color="#7CFF6B" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="shield" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#00D9FF"/>
+      <stop offset="100%" stop-color="#7CFF6B"/>
+    </linearGradient>
+    <linearGradient id="terminal" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#10263B" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#07111E" stop-opacity="0.92"/>
+    </linearGradient>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" fill="none" stroke="#5EA9C2" stroke-opacity="0.09" stroke-width="1"/>
+      <circle cx="1" cy="1" r="1.5" fill="#00D9FF" fill-opacity="0.16"/>
+    </pattern>
+    <filter id="glowCyan" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glowGreen" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="rounded">
+      <rect x="0" y="0" width="1600" height="500" rx="28"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#rounded)">
+    <rect width="1600" height="500" fill="url(#bg)"/>
+    <rect width="1600" height="500" fill="url(#grid)"/>
+
+    <!-- Ambient technical light -->
+    <ellipse cx="1280" cy="-30" rx="430" ry="210" fill="#00D9FF" opacity="0.07"/>
+    <ellipse cx="1480" cy="440" rx="420" ry="180" fill="#7CFF6B" opacity="0.055"/>
+    <path d="M0 84H1600" stroke="url(#edge)" stroke-width="2" opacity="0.9"/>
+    <path d="M0 416H1600" stroke="url(#edge)" stroke-width="2" opacity="0.55"/>
+
+    <!-- Decorative circuit traces -->
+    <g fill="none" stroke-linecap="round">
+      <path d="M84 140H210V102H312" stroke="#00D9FF" stroke-opacity="0.5" stroke-width="2"/>
+      <path d="M28 190H126V228H242" stroke="#7CFF6B" stroke-opacity="0.45" stroke-width="2"/>
+      <path d="M1334 116H1440V168H1582" stroke="#00D9FF" stroke-opacity="0.45" stroke-width="2"/>
+      <path d="M1360 358H1450V318H1580" stroke="#7CFF6B" stroke-opacity="0.45" stroke-width="2"/>
+      <path d="M1160 438H1240V400H1328" stroke="#00D9FF" stroke-opacity="0.35" stroke-width="2"/>
+      <path d="M92 364H164V406H284" stroke="#00D9FF" stroke-opacity="0.35" stroke-width="2"/>
+    </g>
+    <g fill="#00D9FF" filter="url(#glowCyan)">
+      <circle cx="312" cy="102" r="4"/><circle cx="242" cy="228" r="4"/>
+      <circle cx="1440" cy="116" r="4"/><circle cx="1580" cy="318" r="4"/>
+    </g>
+    <g fill="#7CFF6B" filter="url(#glowGreen)">
+      <circle cx="28" cy="190" r="3"/><circle cx="1360" cy="358" r="3"/>
+    </g>
+
+    <!-- Left identity block -->
+    <g transform="translate(112 142)">
+      <text x="0" y="0" fill="#7CFF6B" font-family="monospace" font-size="18" letter-spacing="4">SECURITY-MINDED DEVELOPER</text>
+      <text x="0" y="76" fill="#EAF2FF" font-family="Arial, Helvetica, sans-serif" font-size="66" font-weight="700" letter-spacing="1">TEAM CYBER</text>
+      <rect x="2" y="101" width="420" height="3" rx="2" fill="url(#edge)"/>
+      <text x="0" y="146" fill="#00D9FF" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="600">برمجة • أمن سيبراني • تقنية</text>
+      <text x="0" y="184" fill="#A9C2D8" font-family="Arial, Helvetica, sans-serif" font-size="21">Learn · Build · Secure</text>
+    </g>
+
+    <!-- Terminal card -->
+    <g transform="translate(112 350)">
+      <rect width="470" height="72" rx="12" fill="url(#terminal)" stroke="#1B526C" stroke-width="1.5"/>
+      <circle cx="25" cy="25" r="5" fill="#FF5F56"/><circle cx="44" cy="25" r="5" fill="#FFBD2E"/><circle cx="63" cy="25" r="5" fill="#27C93F"/>
+      <text x="24" y="53" fill="#7CFF6B" font-family="monospace" font-size="17">$ mission: learn -&gt; build -&gt; secure_</text>
+    </g>
+
+    <!-- Shield mark -->
+    <g transform="translate(1010 91)">
+      <path d="M190 10L350 68V202C350 302 280 365 190 402C100 365 30 302 30 202V68L190 10Z" fill="#071320" stroke="url(#shield)" stroke-width="7" filter="url(#glowCyan)"/>
+      <path d="M190 45L316 89V198C316 273 264 322 190 356C116 322 64 273 64 198V89L190 45Z" fill="none" stroke="#00D9FF" stroke-opacity="0.22" stroke-width="2"/>
+      <path d="M190 112V247" stroke="#7CFF6B" stroke-width="9" stroke-linecap="round" filter="url(#glowGreen)"/>
+      <path d="M140 180L190 132L240 180" fill="none" stroke="#7CFF6B" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" filter="url(#glowGreen)"/>
+      <circle cx="190" cy="254" r="11" fill="#00D9FF" filter="url(#glowCyan)"/>
+      <path d="M150 274H230" stroke="#00D9FF" stroke-width="4" stroke-linecap="round" opacity="0.9"/>
+    </g>
+
+    <!-- Code fragments -->
+    <g font-family="monospace" font-size="15" opacity="0.68">
+      <text x="760" y="142" fill="#00D9FF">01 10 01 11  // protect</text>
+      <text x="700" y="166" fill="#7CFF6B">const secure = true;</text>
+      <text x="1280" y="420" fill="#00D9FF">[ firewall ] [ auth ] [ trust ]</text>
+      <text x="720" y="392" fill="#7CFF6B">&lt;/&gt; ethical hacking lab</text>
+    </g>
+
+    <!-- Bottom label -->
+    <text x="1478" y="464" text-anchor="end" fill="#6F91A8" font-family="monospace" font-size="14" letter-spacing="2">CYBER // CODE // COMMUNITY</text>
+  </g>
+
+  <rect x="1.5" y="1.5" width="1597" height="497" rx="27" fill="none" stroke="#18384D" stroke-width="3"/>
+</svg>
